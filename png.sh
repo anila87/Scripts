@@ -9,7 +9,7 @@ helm repo update
 
 #install Prometheus
 helm install prometheus prometheus-community/prometheus \
-  --namespace monitoring \ 
+  --namespace monitoring \
   --set alertmanager.persistentVolume.enabled=true \
   --set server.persistentVolume.enabled=true
 
