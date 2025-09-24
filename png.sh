@@ -1,3 +1,4 @@
+#!/bin/bash
 kubectl create namespace monitoring #craete a namespace 
 # Prometheus repo
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
