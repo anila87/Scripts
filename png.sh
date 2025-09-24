@@ -10,6 +10,7 @@ helm repo update
 #install Prometheus
 helm install prometheus prometheus-community/prometheus \
   --namespace monitoring \
+  --set server.service.type=LoadBalancer \
   --set alertmanager.persistentVolume.enabled=true \
   --set server.persistentVolume.enabled=true
 
